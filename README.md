@@ -37,4 +37,14 @@ We designed a custom web-based application and embedded the YouTube IFrame. Then
 - QoE:
   - For QoE, we save player current state after every 1-second such as: Current Quality, Video Bytes Downloaded, Loaded Percentage, and Time
 
--- 
+> For both Events and QoE, we have "EID", which is exactly the same as of CLM log file name, therefore, you can extract QoE of YouTube and CLM by using EID - Experiment ID. For example: "5A12.csv" is CLM log file, and its corresponding QoE and Events of YouTube are available in csv files by using EID as "5A12.csv"
+
+# Use Cases Description
+- Files starting with 4 are - 4G experiments, 4G cell phone, 4G technology
+- File starting with 5 are - 5G experiments, 5G cell phone, 5G technology
+ - 5Po30 - Experiment is done with 5G cell with 5G technology and the use case is - Pedestrian. The capital Letter (M, P, A, I, O) most of time second letter represents use case as M- Mobility, P - Pedestrian, A - Terminals, I - Indoor, O - Outdoor. For example:
+ - 5Or29 - 5G technology, use case - Outdoor, O represents Outdoor.
+ - 5Ae30 - 5G technology, use case - Outdoor - Bus and Railway Terminals
+ - 4M30 - 4G technology, use case - Mobility
+ - 4I7s - 4G technology, use case - Indoor
+
