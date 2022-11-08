@@ -11,7 +11,10 @@ We collected 4G and 5G dataset using various use cases:
 - Mobility - High
 - Pedestrian
 - Indoor - Static
-- Outdoor - Croweded, Terminals - Railway and Bus
+- Outdoor - Croweded, Terminals - Railway and Bus.
+
+> For each experiment, we select a video out of 10 4K-videos and played in a browser where we embedded YouTube IFRAME API and the same time, we are running Android Network Monitor Application in the background. We set 1-second granularity to collect both YouTube QoE Logs, i.e., Current Quality, Video Bytes Downloaded, etc. and Channel Logs, i.e., RSRQ, RSRP, CQI, Download Bitrate etc. 
+
 ## YouTube IFRAME API
 - IFRAME data API to extract player information i.e., Stalls and Quality Shifts.
 The IFrame player API lets you embed a YouTube video player on web-based applications and control the player using JavaScript.
