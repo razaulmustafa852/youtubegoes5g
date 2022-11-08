@@ -43,7 +43,7 @@ We designed a custom web-based application and embedded the YouTube IFrame. Then
 > For both Events and QoE, we have "EID", which is exactly the same as of CLM log file name, therefore, you can extract QoE of YouTube and CLM by using EID - Experiment ID. For example: "5A12.csv" is CLM log file, and its corresponding QoE and Events of YouTube are available in csv files by using EID as "5A12.csv"
 
 # Use Cases Description
-> First Folder: "Dataset"
+> In Folder: "Channel Logs"
 
 - Files starting with 4 are - 4G experiments, 4G cell phone, 4G technology
 - File starting with 5 are - 5G experiments, 5G cell phone, 5G technology
@@ -53,8 +53,7 @@ We designed a custom web-based application and embedded the YouTube IFrame. Then
  - 4M30 - 4G technology, use case - Mobility
  - 4I7s - 4G technology, use case - Indoor
  
-> Second Folder: "Moredataset"
-- In this folder all experiments are with 4G technology with 4G cell-phone.
+> Few Use cases are as: "
 - Use cases starting with A are at Terminals - Outdoor.
 - Use cases starting with "b,m" are Mobility
 - Use cases starting with "w, c, s" are Pedestrian
