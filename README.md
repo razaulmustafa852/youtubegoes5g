@@ -7,11 +7,34 @@ Critical issues for MNO include how to manage increased video traffic demands an
 - Therefore, we carry out a massive 4G and 5G dataset collection campaign using a commercial 4G and 5G network, where we consider YouTube as baseline for video streaming to collect Channel Metrics and YouTube QoE logs with 1-second granularity.
 
 # Methodology
+We collected 4G and 5G dataset using various use cases:
+- Mobility - High
+- Pedestrian
+- Indoor - Static
+- Outdoor - Croweded, Terminals - Railway and Bus
+## YouTube IFRAME API
 - IFRAME data API to extract player information i.e., Stalls and Quality Shifts.
 The IFrame player API lets you embed a YouTube video player on web-based applications and control the player using JavaScript.
 We designed a custom web-based application and embedded the YouTube IFrame. Then, using Javascript, we define functions to save player events in MySQL database after every 1-second interval.
   - https://developers.google.com/youtube/iframe_api_reference
+## Android Application - Network Monitor
 - An Android application to collect channel level metrics e.g., CQI, RSRQ, RSRP, SNR, application download bitrate. It is a network monitor and drive test tool application for 5G/4G/3G/2G networks.  It allows monitoring and logging of mobile network parameters without using specialized equipment. It provides 2G/3G/4G/5G serving and neighbors cells information measurement and save it in logfiles (text and kml format).
   - We used Gnetrack Pro - https://play.google.com/store/apps/details?id=com.gyokovsolutions.gnettrackproplus&hl=en&gl=US&pli=1
 
+# Dataset Description
 
+## Channel Level Metrics (CLM) Logs
+  - Each experiment generate 1-Channel log, whereas its corresponding YouTube QoE logs are saved in MySQL. 
+  - For CLM, each file has name and the end of each file logs we inserted file name as "EID" as Experiment ID. This is unique EID given to each experiments, thus can be used to extract QoE of YouTube from other Tables.
+  - In CLM we provide, Timestamp,	Longitude,	Latitude,	CellID,	NetworkTech,	NetworkMode,	Level,	Qual,	SNR,	CQI,	LTERSSI,	DL_bitrate,	UL_bitrate,	Altitude,	Height,	State,	EVENT,	SecondCell_RSRP,	SecondCell_RSRQ,	SecondCell_SNR and EID at end - Which is same as file name.
+    - Detail of each features is available at - https://gyokovsolutions.com/manual-g-nettrack/
+## YouTube QoE Logs
+- YouTube QoE logs are of two types
+  - Events
+  - QoE
+- Events:
+  - For Events, we saved 6 events as: -1 – unstarted, 0 – ended, 1 – playing, 2 – paused, 3 – buffering, 5 – video cued
+- QoE:
+  - For QoE, we save player current state after every 1-second such as: Current Quality, Video Bytes Downloaded, Loaded Percentage, and Time
+
+-- 
