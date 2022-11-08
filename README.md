@@ -45,7 +45,7 @@ We designed a custom web-based application and embedded the YouTube IFrame. Then
 # Use Cases Description
 - Files starting with 4 are - 4G experiments, 4G cell phone, 4G technology
 - File starting with 5 are - 5G experiments, 5G cell phone, 5G technology
- - 5Po30 - Experiment is done with 5G cell with 5G technology and the use case is - Pedestrian. The capital Letter (M, P, A, I, O) most of time second letter represents use case as M- Mobility, P - Pedestrian, A - Terminals, I - Indoor, O - Outdoor. For example:
+ - 5Po30 - Experiment is done with 5G cell with 5G technology and the use case is - Pedestrian. Mostly the capital Letter (M, P, A, I, O) at second position represents use case, i.e., M - Mobility, P - Pedestrian, A - Terminals, I - Indoor, O - Outdoor. For example:
  - 5Or29 - 5G technology, use case - Outdoor, O represents Outdoor.
  - 5Ae30 - 5G technology, use case - Outdoor - Bus and Railway Terminals
  - 4M30 - 4G technology, use case - Mobility
