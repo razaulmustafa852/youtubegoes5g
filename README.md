@@ -51,3 +51,6 @@ We designed a custom web-based application and embedded the YouTube IFrame. Then
  - 4M30 - 4G technology, use case - Mobility
  - 4I7s - 4G technology, use case - Indoor
 
+
+# Slides & Video Demo: Accepted in IEEE Globecom Demo Session 2022.
+- https://docs.google.com/presentation/d/1_l1zMFuQioZX3Uw-CuOpuLfP4mT1yFNHxyxOysxi6O8/edit?usp=sharing
