@@ -62,5 +62,3 @@ We designed a custom web-based application and embedded the YouTube IFrame. Then
 - There are two files, i) Events of YouTube as: Events.csv and ii) QoE after every 1-second as: QoE.csv
 - Use EID of Channel Log to extract its corresponding Events and QoE of YouTube from these csv files.
 
-# Slides & Video Demo: Accepted in IEEE Globecom Demo Session 2022.
-- https://docs.google.com/presentation/d/1_l1zMFuQioZX3Uw-CuOpuLfP4mT1yFNHxyxOysxi6O8/edit?usp=sharing
